@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="container mt-5">
+
+    <h1 class="text-center">Purdue Spatial Visualization Tests</h1>
+    <p class="text-center">DIRECTIONS: This test consists of 10 questions designed to see how well you can visualize the rotation of three-dimensional objects.</p>
+
+    <div class="quiz-container d-flex">
+        <!-- Main Question Section -->
+        <div class="question-content">
+            <form id="feedbackForm" class="text-center">
+                <div id="question-container">
+                    <!-- Questions will be injected dynamically -->
+                </div>
+                
+                <div class="mt-4">
+                    <button type="button" id="prevButton" class="btn btn-secondary me-2" disabled>Previous</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" id="nextButton" class="btn btn-success ms-2">Next</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Tracker on the right side -->
+        <div class="tracker-container">
+            <h4>Progress</h4>
+            <div id="tracker"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
